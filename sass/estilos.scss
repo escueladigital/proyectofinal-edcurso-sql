@@ -1,6 +1,7 @@
 // Importar ed-grid
-@import "../node_modules/ed-grid/ed-grid";
-@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+  @import "../node_modules/ed-grid/ed-grid";
+// Importar fuente
+  @import url(https://fonts.googleapis.com/css?family=Lato:400,700);
 
 // Variables
   //colores
@@ -11,6 +12,11 @@
     $error_color  : #DD4132;
     $black_color  : #3A383D;
     $white_color  : #F6F6F6;
+
+// Importar componentes
+  @import "footer";
+
+
 
 body {
   background : $white_color;
@@ -34,14 +40,6 @@ h1 {
   max-height : 1.8em;
   margin : .5em auto;
   display : block;
-}
-
-.main-footer {
-  background : $black_color;
-  color: $white_color;
-  margin-top : auto;
-  font-size : .8em;
-  text-align : center;
 }
 
 // login
