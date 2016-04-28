@@ -1,5 +1,97 @@
-//@import "../node_modules/ed-grid/ed-grid";
+// Importar ed-grid
+@import "../node_modules/ed-grid/ed-grid";
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+
+// Variables
+  //colores
+    $blue_color   : #1FACCA;
+    $alert_color  : #E6C04C;
+    $sucess_color : #7AA93C;
+    $cta_color    : #D19559;
+    $error_color  : #DD4132;
+    $black_color  : #3A383D;
+    $white_color  : #F6F6F6;
+
 body {
+  background : $white_color;
   display : flex;
-  background : yellow;
+  flex-direction: column;
+  min-height : 100vh;
+  color: $black_color;
+  font-family: 'Lato', sans-serif;
+}
+
+h1 {
+  text-align : center;
+  margin-top : 1em;
+}
+
+.main-header {
+  background : $blue_color;
+}
+
+.logo {
+  max-height : 1.8em;
+  margin : .5em auto;
+  display : block;
+}
+
+.main-footer {
+  background : $black_color;
+  color: $white_color;
+  margin-top : auto;
+  font-size : .8em;
+  text-align : center;
+}
+
+// login
+
+.login-form {
+  background : #fff;
+  border-bottom : 2px solid $cta_color;
+  padding : 1em;
+  margin-top : 4em;
+  [type="text"],
+  [type="password"]{
+    width : 100%;
+    border : none;
+    line-height : inherit;
+    background : rgba($white_color,.5);
+    border-bottom : 1px solid $sucess_color;
+    padding : 0 1em;
+    transition: all .3s;
+    color: rgba($black_color,.7);
+    &:focus,
+    &.focus {
+      box-shadow: none;
+      outline: none;
+      width : 75%;
+      margin-left : 25%;
+    }
+  }
+  label {
+    position : absolute;
+    font-size : .8em;
+    opacity : .5;
+  }
+  
+  [type="submit"]{
+    background : $blue_color;
+    border : none;
+    line-height : 2.5;
+    color: #fff;
+    text-transform : uppercase;
+    padding : 0 1em;
+    margin-top : 1em;
+    cursor: pointer;
+    &:hover {
+      background : darken($blue_color,5);
+    }
+  }
+}
+
+.form-item {
+  margin-bottom : .5em;
+  line-height : 2;
+  position : relative;
 }

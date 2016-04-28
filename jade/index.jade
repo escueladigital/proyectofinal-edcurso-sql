@@ -1,3 +1,12 @@
 extends template/template
 block main
-  h1 Proyecto SQL hola
+  h1 Ingresar
+  form.login-form.ed-container.web-40
+    .ed-item.form-item
+      label(for="username") Usuario
+      input(type="text" name="username" id="username").input
+    .ed-item.form-item
+      label(for="password") Contraseña
+      input(type="password" name="password" id="password").input
+    .ed-item.form-item
+      input(type="submit" value="Ingresar")

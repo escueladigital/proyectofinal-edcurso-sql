@@ -6,4 +6,17 @@ html(lang="es")
     link(rel="stylesheet", href="estilos.css")
     title Hola mundo
   body
-    block main
+    header.main-header
+      .ed-container
+        .ed-item
+          img(src="http://escueladigital.pe/sites/__escueladigital/files/2015_img/logo.png").logo
+
+    main.ed-container
+      .ed-item
+        block main
+
+    footer.main-footer
+      .ed-container
+        .ed-item
+          p Curso Bases de Datos Desde Cero - Alexys Lozada
+    script(src="efectos.js")
