@@ -29,23 +29,80 @@
     opacity : .5;
   }
 
-  [type="submit"]{
-    background : $blue_color;
-    border : none;
-    line-height : 2.5;
-    color: #fff;
-    text-transform : uppercase;
-    padding : 0 1em;
-    margin-top : 1em;
-    cursor: pointer;
-    &:hover {
-      background : darken($blue_color,5);
-    }
-  }
+
 }
 
 .form-item {
-  margin-bottom : .5em;
+  margin-bottom : .6em;
   line-height : 2;
   position : relative;
+  padding : .3em 0;
+  &:hover {
+    //background : rgba($alert_color,.1);
+  }
+}
+
+form {
+  margin-top : 3em;
+  width : 50%;
+  margin-left : auto;
+  margin-right : auto;
+  background : #fff;
+  padding : 1em;
+  border-bottom : 3px solid $cta_color;
+}
+
+[type="text"],
+[type="number"],
+[type="password"],
+[type="date"],
+select,
+label {
+  width : 100%;
+  line-height : 2;
+  font-size : .8em;
+  padding-left : 1em;
+  color: rgba($black_color,.7)
+  &:focus,
+  &.focus {
+    box-shadow: none;
+    outline: none;
+  }
+}
+
+label {
+  padding-left : 0;
+  font-weight : bold;
+}
+
+[type="text"],
+[type="number"],
+[type="password"],
+[type="date"] {
+  border : none;
+  border-bottom : 1px solid $sucess_color;
+}
+
+select {
+  border : 1px solid $sucess_color;
+  line-height : 2em;
+  height : 2em;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border-radius : 1px;
+  background : url(img/triangle.svg) no-repeat right center / 24px;
+}
+
+[type="submit"]{
+  background : $blue_color;
+  border : none;
+  line-height : 2.5;
+  color: #fff;
+  text-transform : uppercase;
+  padding : 0 1em;
+  margin-top : 1em;
+  cursor: pointer;
+  &:hover {
+    background : darken($blue_color,5);
+  }
 }

@@ -3,4 +3,38 @@ append config
   -titulo = "Compras"
   -page = "compras"
 block main
-  h1 Compra
+  h1 Compras
+  form
+    .form-item.ed-container
+      .ed-item.base-30
+        label(for="fecha") Fecha
+      .ed-item.base-70
+        input(type="date" id="fecha" name="fecha")
+
+    .form-item.ed-container
+      .ed-item.base-30
+        label(for="proveedor") Proveedor
+      .ed-item.base-70
+        select(name="proveedor" id="proveedor")
+          option(value="proveedor 1") Proveedor 1
+          option(value="proveedor 2") Proveedor 2
+          option(value="proveedor 3") Proveedor 3
+
+    .form-item.ed-container
+      .ed-item.base-30
+        label(for="producto") Producto
+      .ed-item.base-70
+        select(name="producto" id="producto")
+          option(value="producto 1") Producto 1
+          option(value="producto 2") Producto 2
+          option(value="producto 3") Producto 3
+
+    .form-item.ed-container
+      .ed-item.base-30
+        label(for="cantidad") Cantidad
+      .ed-item.base-70
+        input(type="number" id="cantidad")
+
+    .ed-container
+      .ed-item
+        input(type="submit" value="comprar")
