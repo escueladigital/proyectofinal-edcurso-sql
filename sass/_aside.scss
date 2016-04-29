@@ -1,0 +1,27 @@
+.main-aside {
+  background : $black_color;
+  width : 300px;
+
+  .logo {
+    margin-top : 1.5em;
+    margin-bottom : 2em;
+  }
+}
+
+.menu {
+  $line: 1px solid rgba($white_color,.1);
+  border-top : $line;
+  &__link {
+    color: $white_color;
+    text-transform : uppercase;
+    font-size : .85em;
+    border-bottom : $line;
+    line-height : 4 !important;
+    display : block;
+    box-shadow: 1px 0 0 rgba(#000,.5) inset;
+    transition: all .4s;
+    &:hover {
+      box-shadow: 400px 0 0 rgba(#000,.5) inset;
+    }
+  }
+}

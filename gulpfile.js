@@ -7,7 +7,7 @@ const gulp         = require('gulp'),
 
 gulp.task('sass', () =>
   gulp.src('./sass/estilos.scss')
-    .pipe(watch('sass/**/*.scss'))
+    //.pipe(watch('sass/**/*.scss'))
     .pipe(sass({
       outputStyle: 'compressed'
     }))
@@ -21,7 +21,6 @@ gulp.task('sass', () =>
 
 gulp.task('jade', () =>
   gulp.src('./jade/*.jade')
-      .pipe(watch('./jade/**/*.jade'))
       .pipe(jade({
         pretty: true
       }))

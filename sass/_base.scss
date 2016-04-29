@@ -1,0 +1,13 @@
+body {
+  background : $white_color;
+  display : flex;
+  flex-direction: column;
+  min-height : 100vh;
+  color: $black_color;
+  font-family: 'Lato', sans-serif;
+}
+
+h1 {
+  text-align : center;
+  margin-top : 1em;
+}

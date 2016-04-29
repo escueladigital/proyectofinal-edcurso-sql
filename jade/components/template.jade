@@ -1,0 +1,43 @@
+block config
+  include variables
+
+<!DOCTYPE html>
+html(lang="es")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, minimun-scale=1.0")
+    link(rel="stylesheet", href="estilos.css")
+    title #{titulo}
+  body(class="#{page}")
+    if(page == "inicio")
+      header.main-header
+        .ed-container
+          .ed-item
+            img(src="http://escueladigital.pe/sites/__escueladigital/files/2015_img/logo.png").logo
+
+      main.ed-container
+        .ed-item
+          block main
+
+      footer.main-footer
+        .ed-container
+          .ed-item
+            p Curso Bases de Datos Desde Cero - Alexys Lozada
+    else
+      .main-container
+        aside.main-aside
+          img(src="http://escueladigital.pe/sites/__escueladigital/files/2015_img/logo.png").logo
+          ul.menu.ed-menu
+            li.menu__item
+              a(href="compras.html").menu__link Compras
+            li.menu__item
+              a(href="ventas.html").menu__link Ventas
+            li.menu__item
+              a(href="lista-compras.html").menu__link Lista de compras
+            li.menu__item
+              a(href="lista-ventas.html").menu__link Lista de ventas
+            li.menu__item
+              a(href="lista-productos.html").menu__link Lista de productos
+        main.main-content
+        block main
+    script(src="efectos.js")
