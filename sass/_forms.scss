@@ -62,7 +62,7 @@ label {
   line-height : 2;
   font-size : .8em;
   padding-left : 1em;
-  color: rgba($black_color,.7)
+  color: rgba($black_color,.7);
   &:focus,
   &.focus {
     box-shadow: none;
@@ -90,7 +90,7 @@ select {
   -moz-appearance: none;
   -webkit-appearance: none;
   border-radius : 1px;
-  background : url(img/triangle.svg) no-repeat right center / 24px;
+  background : url(#{$img-dir}/triangle.svg) no-repeat right center / 24px;
 }
 
 [type="submit"]{

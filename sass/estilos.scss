@@ -13,6 +13,9 @@
     $black_color  : #3A383D;
     $white_color  : #F6F6F6;
 
+  // rutas
+    $img-dir : '/img';
+
 // Importar componentes
   @import "footer";
   @import "header";
@@ -21,3 +24,4 @@
   @import "layout";
   @import "aside";
   @import "content";
+  @import "tables";
