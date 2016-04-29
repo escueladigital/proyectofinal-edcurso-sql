@@ -1,0 +1,56 @@
+.message {
+  width : 50%;
+  margin-left : auto;
+  margin-right : auto;
+  color : #fff;
+  line-height : 2.5;
+  font-size : .85em;
+  margin-bottom : .5em;
+  padding : 0 1em;
+  animation: message 1s;
+  animation-fill-mode: forwards;
+  position : relative;
+  top: -1000px;
+  &:before {
+    margin-right : 1em;
+  }
+
+  @keyframes message{
+    to {
+      top: 0;
+    }
+  }
+}
+
+.error {
+  background : $error_color;
+}
+
+.success {
+  background : $sucess_color;
+}
+
+
+.user {
+  position : fixed;
+  top : 0;
+  right : 0;
+  background : $black_color;
+  color: $white_color;
+  line-height : 2.5;
+  padding : 0 1em;
+  font-size : .8em;
+  border-bottom-left-radius: .6em;
+  &:before {
+    margin-right : .5em;
+  }
+  a {
+    color: $alert_color;
+    display : inline-block;
+    margin-left : 1em;
+    font-size : .95em;
+    &:hover {
+      text-decoration : underline;
+    }
+  }
+}
