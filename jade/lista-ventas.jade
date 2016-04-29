@@ -1,0 +1,57 @@
+extends components/template
+append config
+  -titulo = "Lista de compras"
+  -page = "Listado de compras"
+block main
+  h1  Listado de ventas
+
+  table.listado
+    thead
+      tr
+        th ID
+        th Fecha
+        th Proveedor
+        th Producto
+        th Cantidad
+        th Valor
+    tfoot
+      tr
+        td(colspan="4").suma-label Total
+        td.suma 20
+        td.suma $200.00
+    tbody
+      tr
+        td 1
+        td 10/02/2016
+        td Empresa ABC
+        td Producto XYZ
+        td 5
+        td $ 20.00
+      tr
+        td 1
+        td 10/02/2016
+        td Empresa ABC
+        td Producto XYZ
+        td 5
+        td $ 20.00
+      tr
+        td 1
+        td 10/02/2016
+        td Empresa ABC
+        td Producto XYZ
+        td 5
+        td $ 20.00
+      tr
+        td 1
+        td 10/02/2016
+        td Empresa ABC
+        td Producto XYZ
+        td 5
+        td $ 20.00
+      tr
+        td 1
+        td 10/02/2016
+        td Empresa ABC
+        td Producto XYZ
+        td 5
+        td $ 20.00
